@@ -100,3 +100,58 @@ nav ul li a {
   font-style: italic;
   margin-left: 40px;
 }
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Stack the navigation items */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  /* Stack main section vertically */
+  .main-section {
+    flex-direction: column-reverse; /* Puts text below the image for better flow */
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .left-section {
+    font-size: 1.8rem; /* Shrink text so it doesn't wrap awkwardly */
+    margin: 20px;
+    text-align: center;
+  }
+
+  .right-section img {
+    width: 80%; /* Let the image scale with the screen */
+    margin: 0 auto;
+  }
+
+  /* Adjust buttons for thumb-tapping */
+  .btns {
+    justify-content: center;
+  }
+
+  /* Stack About Me section */
+  .about-me-content {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .about-me-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    width: 90%; /* Remove the fixed 400px */
+    margin-left: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
