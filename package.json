@@ -1,0 +1,25 @@
+{
+  "name": "harrison-khokhar---web-developer",
+  "version": "1.0.0",
+  "description": "hey, i am a web developer !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/factoz234-png/Harrison-Khokhar---Web-Developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/factoz234-png/Harrison-Khokhar---Web-Developer/issues"
+  },
+  "homepage": "https://github.com/factoz234-png/Harrison-Khokhar---Web-Developer#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
