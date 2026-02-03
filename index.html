@@ -1,17 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harrison Khokhar - Web Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="left">Harrison's Portfolio</div>
-        <div class="right">
-          <ul>
+      <nav class="flex flex-row justify-evenly items-center bg-blue-950 p-2">
+        <div class="text-white text-2xl ml-5 font-bold">
+          Harrison's Portfolio
+        </div>
+        <div class="text-white">
+          <ul class="flex flex-wrap space-x-10 ml-5">
             <li><a href="/">Home</a></li>
             <li><a href="/">About Me</a></li>
             <li><a href="/">Experience</a></li>
@@ -20,23 +22,32 @@
         </div>
       </nav>
     </header>
-    <section class="main-section">
-      <div class="left-section">
-        Hi! My name is <span class="Harrison"> Harrison </span> <br />and i am a
-        Passionate <br />
-        Web <span id="element"></span>
-        <div class="btns">
+    <section class="flex flex-wrap justify-evenly items-center">
+      <div class="text-white text-4xl p-10">
+        Hi! My name is
+        <span class="text-blue-400 font-bold italic"> Harrison </span> <br />and
+        i am a Passionate <br />
+        Web <span id="element" class="text-blue-500"></span>
+        <div class="flex flex-wrap justify-evenly text-base mt-9 mr-10">
           <div>
-            <button class="button">
+            <button
+              class="bg-blue-900 p-2.5 rounded-xl outline-2 outline-blue-900"
+            >
               <a href="Non Verbal 02.pdf" download="I am the one.pdf"
                 >Download Resume</a
               >
             </button>
           </div>
-          <div><button class="button">GitHub</button></div>
+          <div>
+            <button
+              class="bg-blue-900 p-2.5 rounded-xl outline-2 outline-blue-900"
+            >
+              GitHub
+            </button>
+          </div>
         </div>
       </div>
-      <div class="right-section">
+      <div class="w-110 p-10">
         <img src="Img/PngItem_1127587.png" alt="" />
       </div>
     </section>
