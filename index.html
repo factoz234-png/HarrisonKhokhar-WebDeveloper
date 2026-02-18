@@ -4,81 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harrison Khokhar - Web Developer</title>
-    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="flex flex-row justify-evenly items-center bg-blue-950 p-2">
-        <div class="text-white text-2xl ml-5 font-bold">
-          Harrison's Portfolio
-        </div>
-        <div class="text-white">
-          <ul class="flex flex-wrap space-x-10 ml-5">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/">Experience</a></li>
-            <li><a href="/">Contact Me </a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="flex flex-wrap justify-evenly items-center">
-      <div class="text-white text-center text-4xl p-10">
-        Hi! My name is
-        <span class="text-blue-400 font-bold italic"> Harrison </span> <br />and
-        i am a Passionate <br />
-        Web <span id="element" class="text-blue-500"></span>
-        <div class="flex flex-wrap justify-evenly text-base mt-9 mr-10">
-          <div>
-            <button
-              class="bg-blue-900 p-2.5 rounded-xl outline-2 outline-blue-900"
-            >
-              <a href="Non Verbal 02.pdf" download="I am the one.pdf"
-                >Download Resume</a
-              >
-            </button>
-          </div>
-          <div>
-            <button
-              class="bg-blue-900 p-2.5 rounded-xl outline-2 outline-blue-900"
-            >
-              GitHub
-            </button>
-          </div>
-        </div>
+    <div class="nav">
+      <div class="left-nav"><h1>Harrison Khokhar</h1></div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="w-110 p-10">
-        <img src="Img/PngItem_1127587.png" alt="" />
+
+      <div class="right-nav" id="nav-menu">
+        <ul>
+          <li><a href="#main-section">Home</a></li>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Education</li>
+          <li>Contact</li>
+        </ul>
       </div>
-    </section>
-    <section>
-      <div class="w-full mx-auto text-white">
-        <h1 class="text-center">About Me</h1>
+    </div>
+
+    <div id="main-section">
+      <div class="My-name">I am Harrison Khokhar!</div>
+
+      <div class="main-para">Be Ready to work with me!</div>
+
+      <div class="btns">
+        <button>GitHub</button>
+        <button>LinkedIn</button>
       </div>
-      <div class="flex flex-row justify-evenly">
-        <div class="w-50">
-          <img src="Img/person.jpg" class="rounded-full" />
-        </div>
-        <div class="text-white w-100">
-          <p>
-            Hey! I am Harrison Khokhar and I am based in Pakistan. I have Passed
-            my 12 Standard from Army Public College. I have started my journey
-            as a Web Developer since start of the year 2025. You can say me a
-            fresher but i am so passionate with my work so no problem would
-            cause.
-          </p>
-        </div>
-      </div>
-    </section>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["<i>Developer<i>", "<i>Designer<i>"],
-        typeSpeed: 200,
-        backDelay: 2000,
-        backspeed: 300,
-        loop: true,
-      });
-    </script>
+    </div>
+
+    <div class="about-section"></div>
+
+    <script src="index.js"></script>
   </body>
 </html>
