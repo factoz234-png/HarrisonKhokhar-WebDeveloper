@@ -1,13 +1,27 @@
 body {
   background-color: rgb(248, 255, 154);
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 .nav {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    padding 0.3s ease;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+}
+
+.nav.scrolled {
+  background-color: rgba(248, 255, 154, 0.756);
+  backdrop-filter: blur(5px);
 }
 
 .right-nav ul {
@@ -74,6 +88,7 @@ body {
   font-size: 50px;
   text-align: center;
   margin-top: 100px;
+  padding: 10px;
 }
 
 .main-para {
@@ -112,6 +127,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
 
+    a {
+      text-decoration: none;
+      color: white;
+    }
     &:hover {
       background-color: rgb(33, 28, 28);
     }
@@ -123,34 +142,64 @@ body {
   margin: 50px auto;
   border-radius: 30px;
   width: 80%;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+.img-info {
+  width: fit-content;
+  display: flex;
+  img {
+    width: 50px;
+    padding: 15px;
+  }
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  font-family: monospace, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
 @media (max-width: 768px) {
   .left-nav h1 {
     font-size: 24px;
     border: none;
+    &::after {
+      display: none;
+    }
   }
 
   .hamburger {
     display: flex; /* Show hamburger on mobile */
   }
 
+  .nav {
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+
   .right-nav {
     display: none; /* Hide the menu by default on mobile */
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 38px;
     left: 0;
-    background-color: rgb(198, 207, 64);
   }
 
   /* When this class is added via JS, the menu appears */
   .right-nav.active {
     display: block;
+    background-color: rgba(248, 255, 154, 0.756);
+    backdrop-filter: blur(5px);
 
     ul li {
-      margin: 10px 0;
+      margin: 7px 0;
       width: 70px;
       text-align: center;
 
@@ -176,5 +225,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+  }
+
+  .img-info img {
+    display: none;
+  }
+
+  .about-me {
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
