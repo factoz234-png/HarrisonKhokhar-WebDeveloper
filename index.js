@@ -20,3 +20,16 @@ navLinks.forEach((link) => {
     navMenu.classList.remove("active");
   });
 });
+
+const viewCert = document.querySelector(".certificates-section .yes .btnss");
+const CertSec = document.getElementById("Cert-sec");
+
+viewCert.addEventListener("click", () => {
+  CertSec.classList.toggle("active");
+
+  if (CertSec.classList.contains("active")) {
+    viewCert.textContent = "Close Certificate";
+  } else {
+    viewCert.textContent = "View Certificate";
+  }
+});
