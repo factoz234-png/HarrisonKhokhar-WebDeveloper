@@ -13,3 +13,10 @@ window.onscroll = function () {
     nav.classList.remove("scrolled");
   }
 };
+
+const navLinks = document.querySelectorAll(".nav ul li a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
