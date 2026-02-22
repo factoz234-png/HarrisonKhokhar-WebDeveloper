@@ -262,6 +262,10 @@ html {
   align-items: center;
   z-index: 1000;
 
+  p {
+    display: none;
+  }
+
   h1 {
     display: none;
   }
@@ -273,8 +277,10 @@ html {
 
   .btnss {
     position: absolute;
+    box-shadow: 5px 5px 5px rgba(66, 63, 63, 0.418);
     top: 70%;
-    right: 80px;
+    left: 13%;
+    transform: translate(50%, -50%);
     z-index: 2001;
   }
 }
@@ -344,6 +350,12 @@ html {
       height: 45px;
     }
   }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 30px;
+  }
 }
 .contact-section {
   background-color: rgb(147, 108, 0);
@@ -352,6 +364,10 @@ html {
   text-align: center;
   font-family: monospace, Helvetica, sans-serif;
   color: white;
+
+  .contact-info {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 769px) {
